@@ -1,0 +1,26 @@
+@import '../../../../css/common.less';
+@welcomeInfoPrefixClass: welcome-info;
+
+.@{welcomeInfoPrefixClass} {
+  height: 100%;
+  text-align: center;
+  .display(flex);
+  .flex-direction(column);
+  .align-items(center);
+  .justify-content(center);
+
+  &-title {
+    font-size: 38px;
+    color: rgba(0, 0, 0, 0.45);
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 46px;
+  }
+
+  &-desc {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 38px;
+  }
+}

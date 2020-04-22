@@ -1,0 +1,138 @@
+@import '../../../css/common.less';
+@noFoundPrefixClass: no-found;
+
+.@{noFoundPrefixClass} {
+  .display(flex);
+  .align-items(center);
+  .justify-content(center);
+
+  &-empty {
+    display: inline-block;
+    background-position: 50% 50%;
+    height: 360px;
+    max-width: 430px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    padding-top: 100px;
+    .m-error {
+      font-size: 200px;
+    }
+  }
+
+  /* &-icon {
+    position: relative;
+    margin: 134/@rem auto 0;
+    height: 150/@rem;
+    width: 180/@rem; //background: url(./img/not-found.png) center center no-repeat;
+    background-size: 100% 100%;
+    &-dot {
+      background: #f8b42f;
+      .border-radius(50%);
+      width: 37.5/@rem;
+      height: 37.5/@rem;
+      position: absolute;
+      bottom: 37.5/@rem;
+      left: 50/@rem;
+      .transform-origin(center bottom);
+      .animation(dot .6s ease-in-out infinite);
+    }
+    &-step {
+      position: absolute;
+      width: 30/@rem;
+      height: 30/@rem;
+      border-top: 2/@rem solid #f8b42f;
+      top: 0;
+      right: 0;
+      &-1 {
+        .animation(anim 1.8s linear infinite);
+      }
+      &-2 {
+        .animation(anim 1.8s linear infinite -.6s);
+      }
+      &-3 {
+        .animation(anim 1.8s linear infinite -1.2s);
+      }
+    }
+  } */
+  &-info {
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 16 / @rem;
+    text-align: left;
+    color: #999;
+    line-height: 22 / @rem;
+
+    .status-code {
+      color: #434e59;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 72px;
+      margin-bottom: 24px;
+    }
+
+    .error-msg {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &.fail-type {
+    .no-found-empty {
+    }
+
+    .fail-type-text {
+      margin-top: 10 / @rem;
+      font-size: 12 / @rem;
+      color: #999;
+      line-height: 17 / @rem;
+      text-align: center;
+    }
+  }
+}
+
+/* 
+@-webkit-keyframes anim {
+  0% {
+    opacity: 0;
+    top: 0;
+    right: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 165/@rem;
+    right: 150/@rem;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes dot {
+  0% {
+    transform: scale(1, .7)
+  }
+  20% {
+    transform: scale(.7, 1.2)
+  }
+  40% {
+    transform: scale(1, 1)
+  }
+  50% {
+    bottom: 100/@rem;
+  }
+  46% {
+    transform: scale(1, 1)
+  }
+  80% {
+    transform: scale(.7, 1.2)
+  }
+  90% {
+    transform: scale(.7, 1.2)
+  }
+  100% {
+    transform: scale(1, .7)
+  }
+} */

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>推荐</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web首页1" transform="translate(-46.000000, -984.000000)" fill="#365393">
+            <g id="推荐" transform="translate(46.000000, 984.000000)">
+                <rect id="矩形" x="0" y="0" width="8" height="8" rx="2"></rect>
+                <rect id="矩形备份-2" x="0" y="10" width="8" height="8" rx="2"></rect>
+                <rect id="矩形备份" x="10" y="0" width="8" height="8" rx="2"></rect>
+                <rect id="矩形备份-3" x="10" y="10" width="8" height="8" rx="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

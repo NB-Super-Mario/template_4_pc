@@ -1,0 +1,123 @@
+@import "./variables";
+@icomoon-font-family: "u-icons";
+@icomoon-font-path: "./fonts";
+
+@font-face {
+  font-family: '@{icomoon-font-family}';
+  src: url('@{icomoon-font-path}/@{icomoon-font-family}.ttf?wa24ea') format('truetype'),
+  url('@{icomoon-font-path}/@{icomoon-font-family}.woff?wa24ea') format('woff'),
+  url('@{icomoon-font-path}/@{icomoon-font-family}.svg?wa24ea#@{icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="u-"],
+[class*=" u-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '@{icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.u-add {
+  &:before {
+    content: @u-add;
+  }
+}
+
+.u-arrow-down {
+  &:before {
+    content: @u-arrow-down;
+  }
+}
+
+.u-arrow-up {
+  &:before {
+    content: @u-arrow-up;
+  }
+}
+
+.u-bell {
+  &:before {
+    content: @u-bell;
+  }
+}
+
+.u-close {
+  &:before {
+    content: @u-close;
+  }
+}
+
+.u-edit {
+  &:before {
+    content: @u-edit;
+  }
+}
+
+.u-export {
+  &:before {
+    content: @u-export;
+  }
+}
+
+.u-fail {
+  &:before {
+    content: @u-fail;
+  }
+}
+
+.u-location {
+  &:before {
+    content: @u-location;
+  }
+}
+
+.u-logo {
+  &:before {
+    content: @u-logo;
+  }
+}
+
+.u-move {
+  &:before {
+    content: @u-move;
+  }
+}
+
+.u-play {
+  &:before {
+    content: @u-play;
+  }
+}
+
+.u-sort-down {
+  &:before {
+    content: @u-sort-down;
+  }
+}
+
+.u-sort-up {
+  &:before {
+    content: @u-sort-up;
+  }
+}
+
+.u-stop {
+  &:before {
+    content: @u-stop;
+  }
+}
+
+.u-succ {
+  &:before {
+    content: @u-succ;
+  }
+}

@@ -1,0 +1,14 @@
+# common libs
+
+node_modules
+
+# other
+*.html
+# common libs
+
+# other
+
+coverage/**
+
+lib/
+

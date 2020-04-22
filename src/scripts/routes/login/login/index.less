@@ -1,0 +1,62 @@
+@import '../../../../css/common.less';
+@loginPrefixClass: login;
+
+.@{loginPrefixClass} {
+  &-banner {
+    height: 300px;
+    padding-top: 100px;
+    background: url('./img/banner.jpg') no-repeat center center;
+    background-size: auto 100%;
+    background-color: #fff;
+  }
+
+  &-logo {
+    color: #fff;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 2px 0 rgb(0, 0, 0, .05)
+  }
+
+  &-desc {
+    padding-top: 30px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0 1px 0 rgb(0, 0, 0, .05)
+  }
+
+  .login-form-forgot {
+    float: right;
+    cursor: pointer;
+  }
+
+  .login-input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    .ant-input {
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-radius: 0;
+      outline: none;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .login-form {
+    margin: 0 auto;
+    width: 360px;
+    padding-top: 60px;
+  }
+
+  .login-form-button {
+    margin-top: 40px;
+  }
+}

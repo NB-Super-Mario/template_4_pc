@@ -1,0 +1,48 @@
+@import '../../../css/common.less';
+@trendItemPrefixClass: trend-item;
+
+.@{trendItemPrefixClass} {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+
+  .up,
+  .down {
+    margin-left: 4px;
+    position: relative;
+    top: 1px;
+
+    i {
+      display: inline-block;
+      font-size: 12px;
+      transform: scale(0.65);
+    }
+  }
+
+  .up {
+    color: #f5222d;
+  }
+
+  .down {
+    color: #52c41a;
+    top: -1px;
+  }
+
+  .trend-tex {
+    margin-left: 8px;
+    color: rgba(0, 0, 0, .85);
+  }
+
+  &.trend-item-grey .up,
+  &.trend-item-grey .down {
+    color: rgba(0, 0, 0, .65);
+  }
+
+  &.reverse-color .up {
+    color: #52c41a;
+  }
+
+  &.reverse-color .down {
+    color: #f5222d;
+  }
+}

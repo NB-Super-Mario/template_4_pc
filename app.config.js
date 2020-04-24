@@ -45,6 +45,7 @@ module.exports = {
     cdn_path: CDN_PATH,
   },
   alias: {
+    //解决antd 字体库打包过大问题
     '@ant-design/icons/lib/dist$': path.resolve(
       cwd,
       'src/scripts/common/icons.ts'

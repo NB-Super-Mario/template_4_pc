@@ -139,7 +139,7 @@ module.exports = {
   dev: {
     publicPath: domain,
     output: path.resolve(cwd, '__build'),
-    isOpenBrowser: false,
+    isOpenBrowser: true,
   },
   build: {
     publicPath: domain,

@@ -1,6 +1,6 @@
 {
   "name": "template_4_pc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
-    "@nbsupermario/cli": "^1.0.13",
+    "@nbsupermario/cli": "^1.0.15",
     "acorn": "^6.1.1",
     "add-dom-event-listener": "^1.0.2",
     "antd": "4.2.3",

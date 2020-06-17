@@ -2,97 +2,11 @@
 @headerPrefixClass: header;
 
 .@{headerPrefixClass} {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 64px;
-  background: #464E78;
-  z-index: 20;
-  min-width: 680px;
-
-  &-left {
-    width: 254px;
-    height: 64px;
-    float: left;
-  }
-
-  &-right {
-    width: 254px;
-    height: 64px;
-    padding-right: 20px;
-    float: right;
-    text-align: right;
-
-    .bell-icon {
-      line-height: 24px;
-      font-size: 23px;
-      color: #999db5;
-      cursor: pointer;
-    }
-
-    .usr-info {
-      margin-left: 16px;
-      position: relative;
-      display: inline-block;
-      padding-top: 14px;
-      padding-left: 14px;
-      cursor: pointer;
-
-      &::before {
-        position: absolute;
-        content: ' ';
-        top: 17px;
-        left: 0;
-        height: 30px;
-        width: 1px;
-        overflow: hidden;
-        background: rgba(255, 255, 255, .1);
-      }
-
-      &-head {
-        display: inline-block;
-        height: 36px;
-        width: 36px;
-        .border-radius(50%);
-        background: url('./img/male.png') center center no-repeat;
-        background-size: 100% 100%;
-
-        &.female {
-          background-image: url('./img/female.png')
-        }
-
-        img {
-          max-width: 100%;
-          max-height: 100%;
-        }
-      }
-
-      .down-arrow {
-        margin-left: 8px;
-        color: rgba(255, 255, 255, 0.65);
-      }
-    }
-  }
-
-  &-logo {
-    position: relative;
-    display: inline-block;
-    height: 32px;
-    margin: 16px 0 0 24px;
-    font-size: 32px;
-    color: #fff;
-
-    .env-text {
-      position: absolute;
-      word-break: keep-all;
-      white-space: nowrap;
-      left: 100%;
-      bottom: 0;
-      padding-left: 8px;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.65);
-      letter-spacing: 0;
-    }
-  }
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  background-color: #fff;
+  padding: 0 20px;
+  font-weight: 500;
+  color: #563d7c;
 }

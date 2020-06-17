@@ -17,11 +17,6 @@ const routes = [
     path: '/home',
     component: LoadableComponent(() => import('@routes/home/index/index'))(),
   },
-  /* {
-    path: '/login',
-    component: LoadableComponent(() => import('@routes/login/index/index'))(),
-  },
- */
   {
     path: '/404',
     component: LoadableComponent(() => import('@routes/no-match/index'))(),

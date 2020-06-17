@@ -1,18 +1,15 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
-import { Button } from 'antd';
-import history from '@routes/history';
+import HomePage from '@components/home-page';
+import Header from '@components/header';
 
 import './index.less';
-const goToDetail = (): void => history.push('/home/detail');
 
 const Home = (props: any) => {
   return (
     <>
-      首页{' '}
-      <Button type="primary" onClick={goToDetail}>
-        详情页面
-      </Button>
+      <Header text="首页" />
+      <HomePage />
     </>
   );
 };

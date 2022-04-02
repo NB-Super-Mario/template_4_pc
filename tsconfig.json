@@ -8,7 +8,10 @@
       "@api/*": ["src/scripts/api/*"],
       "@routes/*": ["src/scripts/routes/*"],
       "@util/*": ["src/scripts/util/*"],
-      "@hooks/*": ["src/scripts/hooks/*"]
+      "@hooks/*": ["src/scripts/hooks/*"],
+      "@constants/*": ["src/scripts/constants/*"],
+      "@containers/*": ["src/scripts/containers/*"],
+      "@reducers/*": ["src/scripts/reducers/*"]
     },
     "strict": true,
     "allowSyntheticDefaultImports": true,
@@ -18,7 +21,7 @@
     "sourceMap": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
     "lib": ["dom", "es2015", "es2016", "es2017", "esnext"],
     "forceConsistentCasingInFileNames": false,

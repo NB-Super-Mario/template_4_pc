@@ -1,9 +1,8 @@
-import React from 'react';
-import { hot } from 'react-hot-loader/root';
 import { Button } from 'antd';
 import history from '@routes/history';
 
 import './index.less';
+
 const goToDetail = (): void => history.push('/home/detail');
 
 const Home = (props: any) => {
@@ -16,4 +15,4 @@ const Home = (props: any) => {
     </>
   );
 };
-export default hot(Home);
+export default Home;

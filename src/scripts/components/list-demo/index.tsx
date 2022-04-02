@@ -1,4 +1,3 @@
-import React from 'react';
 import { Breadcrumb } from 'antd';
 import SearchForm from './search-form';
 import TableList from './table';

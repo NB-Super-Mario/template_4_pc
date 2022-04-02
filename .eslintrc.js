@@ -14,14 +14,14 @@ module.exports = {
     tsconfigRootDir: __dirname,
     jsx: true,
     useJSXTextNode: true,
+    ecmaVersion: 2020,
   },
-  plugins: ['@typescript-eslint', 'import', 'jest', 'react', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'react', 'prettier'],
   extends: [
     'airbnb',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'prettier',
@@ -30,6 +30,13 @@ module.exports = {
   ],
   rules: {
     strict: 0,
+    'no-unused-expressions': 0,
+    '@typescript-eslint/no-unused-expressions': 1,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
+    'react/jsx-uses-react': 0,
+    'react/react-in-jsx-scope': 0,
+    'react-hooks/exhaustive-deps': 0,
+    'max-classes-per-file': 1,
     'import/no-dynamic-require': 1,
     'import/order': 0,
     'react/jsx-filename-extension': 0,
@@ -53,15 +60,18 @@ module.exports = {
       2,
       {
         props: true,
-        ignorePropertyModificationsFor: ['draft']
+        ignorePropertyModificationsFor: ['draft'],
       },
     ],
     'import/prefer-default-export': 0,
     'jsx-a11y/anchor-is-valid': 0,
     'no-script-url': 0,
-    'prettier/prettier': [1, {
-      singleQuote: true
-    }],
+    'prettier/prettier': [
+      1,
+      {
+        singleQuote: true,
+      },
+    ],
     'import/extensions': 0,
     '@typescript-eslint/no-var-requires': 1,
     yoda: 0,
@@ -69,19 +79,34 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/explicit-member-accessibility': 0,
     'import/no-extraneous-dependencies': 0,
-    'react/jsx-filename-extension': ['error', {
-      extensions: ['.jsx', '.tsx']
-    }],
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        extensions: ['.jsx', '.tsx'],
+      },
+    ],
     'react/display-name': 0,
+    'no-shadow': 0,
+    'react/jsx-uses-react': 0,
+    'react/react-in-jsx-scope': 0,
   },
+  /*  overrides: [
+    {
+      files: ['*.js', '*.ts'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'warn',
+      },
+    },
+  ], */
   globals: {
     $: false,
     ENVIRONMENT_NAME: false,
     DOMAIN: false,
-    API_DOMAIN: false,
     NEED_MOCK: false,
     IS_DEV: false,
     PREFIX_TARGET: false,
+    SF_HOME_PAGE: false,
+    SF_PID: false,
   },
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],

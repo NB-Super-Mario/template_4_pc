@@ -1,4 +1,3 @@
-import React from 'react';
 import classNames from 'classnames';
 import './index.less';
 
@@ -14,7 +13,7 @@ const Trend = ({
     'trend-item',
     {
       'trend-item-grey': !colorful,
-      'reverse-color': reverseColor && colorful
+      'reverse-color': reverseColor && colorful,
     },
     className
   );

@@ -44,6 +44,7 @@ module.exports = {
     im_path: IM_PATH,
     cdn_path: CDN_PATH,
   },
+
   alias: {
     //解决antd 字体库打包过大问题
     '@ant-design/icons/lib/dist$': path.resolve(
@@ -57,6 +58,7 @@ module.exports = {
     '@routes': path.resolve(cwd, 'src/scripts/routes'),
     '@util': path.resolve(cwd, 'src/scripts/util'),
     '@hooks': path.resolve(cwd, 'src/scripts/hooks'),
+    // moment: 'moment/src/moment',
   },
   domain,
   hostname,
@@ -71,7 +73,7 @@ module.exports = {
       'react-dom',
       'react-router-dom',
       'connected-react-router',
-      //'redux',
+      'redux',
       'react-redux',
     ],
   },
@@ -109,8 +111,8 @@ module.exports = {
     //axios: 'axios',
     //redux: 'Redux',
     //'react-redux': 'ReactRedux',
-    //jquery: 'jQuery',
-    //jquery: '$',
+    jquery: 'jQuery',
+    jquery: '$',
   },
   alwaysWriteToDisk: true,
   minify: {

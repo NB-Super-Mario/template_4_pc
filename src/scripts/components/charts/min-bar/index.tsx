@@ -1,4 +1,3 @@
-import React from 'react';
 import { Chart, Axis, Tooltip, Geom } from 'bizcharts';
 import autoHeight from '../auto-height';
 import './index.less';
@@ -10,16 +9,16 @@ class MiniBar extends React.PureComponent {
       height,
       forceFit = true,
       color = '#1890FF',
-      data = []
+      data = [],
     } = this.props;
 
     const scale = {
       x: {
-        type: 'cat'
+        type: 'cat',
       },
       y: {
-        min: 0
-      }
+        min: 0,
+      },
     };
 
     const padding = [36, 5, 30, 5];
@@ -28,8 +27,8 @@ class MiniBar extends React.PureComponent {
       'x*y',
       (x, y) => ({
         name: x,
-        value: y
-      })
+        value: y,
+      }),
     ];
 
     // for tooltip not to be hide

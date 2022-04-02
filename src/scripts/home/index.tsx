@@ -1,11 +1,13 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Common from '../common';
 import App from './app';
 import './index.less';
 
+const rootElement = document.getElementById('app') as HTMLInputElement;
+const root = createRoot(rootElement);
+
 const Home = (): void => {
   Common();
-  render(<App />, document.getElementById('app'));
+  root.render(<App />);
 };
 export default Home;

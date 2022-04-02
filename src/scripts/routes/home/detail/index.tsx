@@ -1,13 +1,9 @@
-import React from 'react';
-import { hot } from 'react-hot-loader/root';
 import history from '@routes/history';
 import { Button, DatePicker } from 'antd';
 
 import moment from 'moment';
 
 import './index.less';
-
-const { RangePicker } = DatePicker;
 
 const dateFormat = 'YYYY/MM/DD';
 const monthFormat = 'YYYY/MM';
@@ -34,15 +30,8 @@ const Detail = () => (
         picker="month"
       />
       <br />
-      <RangePicker
-        defaultValue={[
-          moment('2015/01/01', dateFormat),
-          moment('2015/01/01', dateFormat),
-        ]}
-        format={dateFormat}
-      />
     </div>
   </div>
 );
 
-export default hot(Detail);
+export default Detail;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Divider } from 'antd';
 import PageHeader from '../page-header';
 import From from './form';

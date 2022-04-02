@@ -168,34 +168,32 @@ export const decodeBase64 = (base64Str: string) => {
 };
 
 export const getCookie = name => {
-  let arr,
-    reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)');
+  let arr;
+  const reg = new RegExp(`(^| )${name}=([^;]*)(;|$)`);
   arr = document.cookie.match(reg);
   if (arr) {
     return unescape(arr[2]);
-  } else {
-    return null;
   }
+  return null;
 };
 export const setCookie = (cname, cvalue, exdays) => {
-  let d = new Date();
+  const d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  let expires = 'expires=' + d.toUTCString();
-  document.cookie =
-    cname + '=' + cvalue + '; ' + expires + ';Path=/;domain=.demo.com';
+  const expires = `expires=${d.toUTCString()}`;
+  document.cookie = `${cname}=${cvalue}; ${expires};Path=/;domain=.demo.com`;
 };
 export const clearCookie = () => {
-  let arr = document.cookie.split(';');
-  let names: any = [];
+  const arr = document.cookie.split(';');
+  const names: any = [];
   if (arr && arr.length) {
     arr.forEach(item => {
-      let name = item.split('=')[0];
+      const name = item.split('=')[0];
       if (name.indexOf('-token') > -1) {
         names.push(name);
       }
     });
   }
-  //删除cookie
+  // 删除cookie
   names.length &&
     names.forEach(item => {
       setCookie(item, '', -1);

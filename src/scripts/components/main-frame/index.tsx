@@ -1,4 +1,3 @@
-import React from 'react';
 import { MenuContext, MenuStatus } from '@routes/home/index';
 import './index.less';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Loadable from 'react-loadable';
 
 import Loading from '@components/loading';
@@ -17,7 +16,7 @@ const LoadableComponent = (
     delay: 200,
     timeout: 10000,
     loading: LoadingComponent,
-    ...opts
+    ...opts,
   });
 export default LoadableComponent;
 

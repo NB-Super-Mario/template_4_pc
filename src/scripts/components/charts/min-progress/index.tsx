@@ -1,4 +1,3 @@
-import React from 'react';
 import { Tooltip } from 'antd';
 
 import './index.less';
@@ -7,7 +6,7 @@ const MiniProgress = ({
   target,
   color = 'rgb(19, 194, 194)',
   strokeWidth,
-  percent
+  percent,
 }) => (
   <div className="min-progress">
     <Tooltip title={`目标值: ${target}%`}>
@@ -22,7 +21,7 @@ const MiniProgress = ({
         style={{
           backgroundColor: color || null,
           width: percent ? `${percent}%` : null,
-          height: strokeWidth || null
+          height: strokeWidth || null,
         }}
       />
     </div>

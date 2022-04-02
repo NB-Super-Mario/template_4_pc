@@ -1,4 +1,3 @@
-import React from 'react';
 import { Col } from 'antd';
 import responsive from '../responsive';
 import './index.less';

@@ -1,14 +1,10 @@
-import React from 'react';
-//import { MenuContext, MenuStatus } from '@routes/home/index';
+// import { MenuContext, MenuStatus } from '@routes/home/index';
 
 import './index.less';
 
 const LeftMenu = (props: any) => {
-  return (
-    <div></div>
-  )
-}
-
+  return <div />;
+};
 
 // <MenuContext.Consumer>
 //   {({ menuStatus, toggleStatus }) => (
@@ -25,6 +21,5 @@ const LeftMenu = (props: any) => {
 //     </div>
 //   )}
 // </MenuContext.Consumer>
-
 
 export default LeftMenu;

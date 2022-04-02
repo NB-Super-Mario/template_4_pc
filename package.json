@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "@nbsupermario/cli": "/Users/liying/workspace/work/self/study-res/fd/mario/cli",
+    "@nbsupermario/cli": "^2.1.0",
     "add-dom-event-listener": "^1.0.2",
     "antd": "4.19.4",
     "axios": "^0.21.1",
